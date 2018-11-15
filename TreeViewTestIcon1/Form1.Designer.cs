@@ -38,6 +38,9 @@
             // 
             // TreeViewFolder
             // 
+            this.TreeViewFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TreeViewFolder.ImageIndex = 0;
             this.TreeViewFolder.ImageList = this.ImageListMain;
             this.TreeViewFolder.Location = new System.Drawing.Point(12, 62);

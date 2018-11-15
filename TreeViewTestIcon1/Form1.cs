@@ -17,6 +17,22 @@ namespace TreeViewTestIcon1
         public Form1()
         {
             InitializeComponent();
+            try
+            {
+
+                foreach (DriveInfo drive in DriveInfo.GetDrives())
+                {
+                    ComboBoxDrives.Items.Add(new DriveDetail
+                    {
+                        Letter = drive.Name,
+                        Name = drive.VolumeLabel
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
         private void AddDataToTreeNode(TreeNode node, TreeNode subNode)
         {
@@ -63,15 +79,6 @@ namespace TreeViewTestIcon1
         {
             try
             {
-                
-                foreach(DriveInfo drive in DriveInfo.GetDrives())
-                {
-                    ComboBoxDrives.Items.Add(new DriveDetail
-                    {
-                         Letter = drive.Name,
-                         Name = drive.VolumeLabel
-                    });
-                }
                 ComboBoxDrives.SelectedIndex = 0;
             }
             catch(Exception ex)
