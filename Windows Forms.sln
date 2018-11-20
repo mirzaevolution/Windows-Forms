@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.48
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorProviderTest", "ErrorProviderTest\ErrorProviderTest.csproj", "{1F70792F-9A1C-466B-B2FE-BF752FE9E888}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewTest1", "TreeViewTest1\TreeViewTest1.csproj", "{1EB0DFC4-2507-4908-8CC4-C06CAB98D17E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewTestIcon1", "TreeViewTestIcon1\TreeViewTestIcon1.csproj", "{3D289FB6-A8BE-4C1A-A997-2402BD3FA0E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewDirectoryViewer", "TreeViewDirectoryViewer\TreeViewDirectoryViewer.csproj", "{9B2862B8-D6C7-465D-8354-E03AB57B6C29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{3D289FB6-A8BE-4C1A-A997-2402BD3FA0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D289FB6-A8BE-4C1A-A997-2402BD3FA0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D289FB6-A8BE-4C1A-A997-2402BD3FA0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2862B8-D6C7-465D-8354-E03AB57B6C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2862B8-D6C7-465D-8354-E03AB57B6C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2862B8-D6C7-465D-8354-E03AB57B6C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2862B8-D6C7-465D-8354-E03AB57B6C29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

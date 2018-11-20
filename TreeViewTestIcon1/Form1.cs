@@ -103,5 +103,15 @@ namespace TreeViewTestIcon1
                 Console.WriteLine(ex);
             }
         }
+
+        private void TreeViewFolder_AfterExpand(object sender, TreeViewEventArgs e)
+        {
+
+        }
+
+        private void TreeViewFolder_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
     }
 }

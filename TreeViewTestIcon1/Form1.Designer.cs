@@ -43,11 +43,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TreeViewFolder.ImageIndex = 0;
             this.TreeViewFolder.ImageList = this.ImageListMain;
-            this.TreeViewFolder.Location = new System.Drawing.Point(12, 62);
+            this.TreeViewFolder.Location = new System.Drawing.Point(9, 50);
+            this.TreeViewFolder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TreeViewFolder.Name = "TreeViewFolder";
             this.TreeViewFolder.SelectedImageIndex = 0;
-            this.TreeViewFolder.Size = new System.Drawing.Size(356, 434);
+            this.TreeViewFolder.Size = new System.Drawing.Size(268, 353);
             this.TreeViewFolder.TabIndex = 0;
+            this.TreeViewFolder.AfterExpand += new System.Windows.Forms.TreeViewEventHandler(this.TreeViewFolder_AfterExpand);
+            this.TreeViewFolder.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeViewFolder_AfterSelect);
             // 
             // ImageListMain
             // 
@@ -61,16 +64,18 @@
             // 
             this.ComboBoxDrives.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxDrives.FormattingEnabled = true;
-            this.ComboBoxDrives.Location = new System.Drawing.Point(12, 13);
+            this.ComboBoxDrives.Location = new System.Drawing.Point(9, 11);
+            this.ComboBoxDrives.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ComboBoxDrives.Name = "ComboBoxDrives";
-            this.ComboBoxDrives.Size = new System.Drawing.Size(261, 24);
+            this.ComboBoxDrives.Size = new System.Drawing.Size(197, 21);
             this.ComboBoxDrives.TabIndex = 1;
             // 
             // ButtonScan
             // 
-            this.ButtonScan.Location = new System.Drawing.Point(294, 12);
+            this.ButtonScan.Location = new System.Drawing.Point(220, 10);
+            this.ButtonScan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonScan.Name = "ButtonScan";
-            this.ButtonScan.Size = new System.Drawing.Size(75, 30);
+            this.ButtonScan.Size = new System.Drawing.Size(56, 24);
             this.ButtonScan.TabIndex = 2;
             this.ButtonScan.Text = "Scan";
             this.ButtonScan.UseVisualStyleBackColor = true;
@@ -78,12 +83,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 508);
+            this.ClientSize = new System.Drawing.Size(284, 413);
             this.Controls.Add(this.ButtonScan);
             this.Controls.Add(this.ComboBoxDrives);
             this.Controls.Add(this.TreeViewFolder);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TreeView Icon Sample";
